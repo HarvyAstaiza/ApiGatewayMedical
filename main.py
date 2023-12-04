@@ -223,9 +223,9 @@ def loadFileConfig():
         return data
 
 
+dataConfig=loadFileConfig()
 if __name__ == '__main__':
-    dataConfig = loadFileConfig()
-    print("Server running : " + "http://" + dataConfig["url-backend"] +
-          ":" + str(dataConfig["port"]))
-serve(app, host=dataConfig["url-backend"], port=dataConfig["port"])
-app.run()
+    
+    print("Server running : "+"http://"+dataConfig["url-backend"]+":"+str(dataConfig["port"]))
+    serve(app, host=dataConfig["url-backend"], port=dataConfig["port"])
+    app.run()
