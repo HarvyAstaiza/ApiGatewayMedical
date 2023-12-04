@@ -1,0 +1,6 @@
+{
+"url-backend": "127.0.0.1",
+"port": 7777,
+"url-backend-security": "https://apiseguridadmedical.onrender.com",
+"url-backend-medical": "https://medicapp-sns1.onrender.com"
+}
