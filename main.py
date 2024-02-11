@@ -14,7 +14,7 @@ from flask_jwt_extended import jwt_required
 from flask_jwt_extended import JWTManager
 
 app = Flask(__name__)
-Cors = CORS(app)
+CORS(app)
 
 app.config["JWT_SECRET_KEY"] = "super-secret"  # Cambiar por el que seconveniente
 jwt = JWTManager(app)
